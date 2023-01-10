@@ -112,6 +112,7 @@ module Clockwork
         options = {
           :from_database => true,
           :synchronizer => self,
+          :thread => true
         }
 
         options[:at] = at_strings_for(model) if model.respond_to?(:at)
